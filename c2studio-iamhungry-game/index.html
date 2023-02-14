@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hungry</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Are.na</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="wrapper">
+        <h1>☆Let's Get Cooking☆</h1>
+        <p>Welcome to the kitchen! Drag and drop to arrange the eggs benedict.</p>
+              
+        <main class="container">
+          <div class="ingredients">
+            <ul class="draggable-list">
+              <li id="e5" draggable="true">Garnish</li>
+              <li id="e4" draggable="true">Hollandaise Sauce</li>
+              <li id="e3" draggable="true">Poached Egg</li>
+              <li id="e2" draggable="true">Canadian Bacon</li>
+              <li id="e1" draggable="true">English Muffin</li>
+            </ul>
+          </div>
+          <div class="ingredient-images">
+            <ul class="draggable-list">
+              <li id="s5" draggable="true"> <img class="chives" src="./images/cut-chives.jpeg" alt="cut-chives"> </li>
+              <li id="s1" draggable="true"><img class="bread" src="./images/english-muffins.png" alt="english-muffin"></li>
+              <li id="s3" draggable="true"><img class="egg" src="./images/poached-egg.webp" alt="poached-eggs"> </li>
+              <li id="s2" draggable="true"><img class="meat" src="./images/canadian-bacon.jpeg" alt="canadian-bacon"></li>
+              <li id="s4" draggable="true"> <img class="sauce" src="./images/hollandaise-sauce.webp" alt="hollandaise-sauce"> </li>
+            </ul>
+          </div>
+        </main> 
+      
+        <div id="endMessage">
+          <h3>Wow! Well done!</h3>      
+          <p>
+            <img class="sandwich" src="./images/eggs-benedict.png" alt="completed-eggs-benedict">
+          </p>
+          <p>
+            <a href="https://tally.so/r/mYjNRJ"><button>&#x2726; Bon Appétit &#x2726;</button></a>
+          </p>
+         <p>
+          <button onclick="playAgain()">&#9825; Make Another &#9825;</button>
+         </p>
+        </div>
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
