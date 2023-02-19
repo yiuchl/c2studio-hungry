@@ -1,135 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=KoHo:wght@700&display=swap');
 
-  /* 
-  
-  .wrapper{
-    width:100vw;
-    height:100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-
-    main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: px;
-  }
-  
+body {
+  background-color: #F5EFE0;
+  font-family: 'JetBrains Mono', monospace;
+  font-family: 'KoHo', sans-serif;
+  color: #5B503B;
 }
-  #eceff1 light grey 
-  #263238 dark grey
-  #37474f dark grey
-  #cfd8dc
-  #b0bec5
-  #F0E5CF pearl
-  #F5EFE0 old lace
-  #F86229 Giants orange
-  #957B5D chamoisee
-  #5B503B Walnut brown
-  #7DAD4E asparagus
-  #FFCC00 egg yolk
-  #F65871 Crayola Bright Pink
-  #577C72 Hooker's Green */
-  body {
-    background-color: #F5EFE0;
-    font-family: 'JetBrains Mono', monospace;
-    font-family: 'KoHo', sans-serif;
-    color: #5B503B;
-  }
-  
-  main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: px;
-  }
 
-  .wrapper{
-    width:100vw;
-    height:100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-  }
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: px;
+}
 
-  .container {
-    max-width: 960px;
-    margin: auto;
-  }
-  
-  h1, h3, p {
-    text-align: center;
-  }
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+}
 
-  .ingredient-images img{
-    width: 100%;
-    height: 100%;
-  }
+.container {
+  max-width: 960px;
+  margin: auto;
+}
 
-  .draggable-list {
-    padding: 5px;
-  }
-  
-  li {
-    list-style: none;
-    padding: 10px;
-    margin: 5px;
-    background-color:#F0E5CF;
-    border: 1px solid #957B5D;
-    color: #5B503B;
-    cursor: grab;
-    text-align: center;
-  }
-  
-  .over {
-    background-color: #FFCC00;
-  }
-  
-  
-  table {
-    max-width:640px;
-    margin: auto;
-    margin-bottom: 20px;
-    /* border: 1px solid #b0bec5; */
-  }
-  
-  button {
-    margin: auto;
-    cursor: pointer;
-    display: block;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 4px;
-    border: none;
-    color: #F5EFE0;
-    background-color:#5B503B;
-    font-family: 'JetBrains Mono', monospace;
-    font-family: 'KoHo', sans-serif;
-  }
-  
-  a:link {
-    text-decoration: none;
-  }
-  
-  a:visited {
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: none;
-  }
-  
-  a:active {
-    text-decoration: none;
-  }
+h1,
+h3,
+p {
+  text-align: center;
+}
 
-  button:hover {
-    background-color:#FFCC00;
-    color:#5B503B;;
-   
-  }
-  
-  #endMessage {
-    display: none;
-  }
+.ingredient-images img {
+  width: 100%;
+  height: 100%;
+}
+
+.draggable-list {
+  padding: 5px;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+  margin: 5px;
+  background-color: #F0E5CF;
+  border: 1px solid #957B5D;
+  color: #5B503B;
+  cursor: grab;
+  text-align: center;
+}
+
+.over {
+  background-color: #FFCC00;
+}
+
+
+table {
+  max-width: 640px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+button {
+  margin: auto;
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  color: #F5EFE0;
+  background-color: #5B503B;
+  font-family: 'JetBrains Mono', monospace;
+  font-family: 'KoHo', sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #FFCC00;
+  color: #5B503B;
+}
+
+#endMessage {
+  display: none;
+}
