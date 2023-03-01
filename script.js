@@ -101,7 +101,7 @@ function checkForMatch2(selected, dropTarget) {
 }
 
 function playAgain() {
-  matchingCounter === 0;
+  matchingCounter = 0;
   endMessage.style.display = 'none';
   funGame.style.display = 'block';
   draggableListItems.forEach(item => {
