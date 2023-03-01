@@ -1,5 +1,6 @@
 const draggableListItems = document.querySelectorAll('.draggable-list li');
 const endMessage = document.getElementById('endMessage');
+const funGame = document.getElementById('funGame');
 
 // current phrase being dragged
 let selectedId;
@@ -43,7 +44,7 @@ function dragDrop() {
 
   if (matchingCounter === 6) {
     endMessage.style.display = 'block';
-    funGame.style.display ='none'
+    funGame.style.display = 'none';
   }
 
   this.classList.remove('over');
@@ -100,8 +101,9 @@ function checkForMatch2(selected, dropTarget) {
 }
 
 function playAgain() {
-  matchingCounter = 0;
+  matchingCounter === 0;
   endMessage.style.display = 'none';
+  funGame.style.display = 'block';
   draggableListItems.forEach(item => {
     document.getElementById(item.id).style.display = 'block';
   })
@@ -116,4 +118,3 @@ function addEventListeners() {
     item.addEventListener('dragleave', dragLeave);
   })
 }
-

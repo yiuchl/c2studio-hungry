@@ -62,9 +62,9 @@ img {
   height: 100%;
 }
 
-.sandwich{
+.sandwich {
   width: 50%;
-  height:50%;
+  height: 50%;
 }
 
 .draggable-list {
@@ -137,10 +137,10 @@ button:hover {
 }
 
 #endMessage {
-  margin: auto;
   display: none;
+  margin: auto;
 }
 
-#funGame{
+#funGame {
   display: block;
 }
