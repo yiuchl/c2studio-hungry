@@ -103,10 +103,10 @@ function checkForMatch2(selected, dropTarget) {
 function playAgain() {
   matchingCounter === 0;
   endMessage.style.display = 'none';
-  funGame.style.display = 'block';
   draggableListItems.forEach(item => {
     document.getElementById(item.id).style.display = 'block';
   })
+  funGame.style.display = 'block';
 }
 
 function addEventListeners() {
