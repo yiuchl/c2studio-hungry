@@ -13,29 +13,32 @@
 <body>
   <main class="wrapper">
     <h1>☆Let's Get Cooking☆</h1>
-    <p>Welcome to the kitchen! Drag and drop to arrange the eggs benedict.</p>
-
     <main class="container">
-      <div class="ingredients">
-        <ul class="draggable-list">
-          <li id="e5" draggable="true">Chives</li>
-          <li id="e4" draggable="true">Hollandaise Sauce</li>
-          <li id="e3" draggable="true">Poached Egg</li>
-          <li id="e2" draggable="true">Canadian Bacon</li>
-          <li id="e1" draggable="true">English Muffin</li>
-          <li id="e6" draggable="true">Cayenne Pepper</li>
-        </ul>
-      </div>
+      <div id="funGame">
+        <p>Welcome to the kitchen! Drag and drop to arrange the eggs benedict.</p>
+    
+        <div class="ingredients">
+          <ul class="draggable-list">
+            <li id="e5" draggable="true">Chives</li>
+            <li id="e4" draggable="true">Hollandaise Sauce</li>
+            <li id="e3" draggable="true">Poached Egg</li>
+            <li id="e2" draggable="true">Canadian Bacon</li>
+            <li id="e1" draggable="true">English Muffin</li>
+            <li id="e6" draggable="true">Cayenne Pepper</li>
+          </ul>
+        </div>
 
-      <div class="ingredient-images">
-        <ul class="draggable-list">
-          <li id="s5" draggable="true"> <img class="chives" src="./images/chives.png" alt="cut-chives"> </li>
-          <li id="s1" draggable="true"><img class="bread" src="./images/english-muffin.png" alt="english-muffin"></li>
-          <li id="s3" draggable="true"><img class="egg" src="./images/poached-egg.png" alt="poached-eggs"> </li>
-          <li id="s2" draggable="true"><img class="meat" src="./images/canadian-bacon.png" alt="canadian-bacon"></li>
-          <li id="s4" draggable="true"> <img class="sauce" src="./images/hollandaise.png" alt="hollandaise-sauce"> </li>
-          <li id="s6" draggable="true"> <img class="sauce" src="./images/cayenne.webp" alt="cayenne-pepper"> </li>
-        </ul>
+        <div class="ingredient-images">
+          <ul class="draggable-list">
+            <li id="s5" draggable="true"> <img class="chives" src="./images/chives.png" alt="cut-chives"> </li>
+            <li id="s1" draggable="true"><img class="bread" src="./images/english-muffin.png" alt="english-muffin"></li>
+            <li id="s3" draggable="true"><img class="egg" src="./images/poached-egg.png" alt="poached-eggs"> </li>
+            <li id="s2" draggable="true"><img class="meat" src="./images/canadian-bacon.png" alt="canadian-bacon"></li>
+            <li id="s4" draggable="true"> <img class="sauce" src="./images/hollandaise.png" alt="hollandaise-sauce">
+            </li>
+            <li id="s6" draggable="true"> <img class="cayenne" src="./images/cayenne.webp" alt="cayenne-pepper"> </li>
+          </ul>
+        </div>
       </div>
     </main>
 
@@ -45,7 +48,7 @@
         <img class="sandwich" src="./images/eggs-benedict.png" alt="completed-eggs-benedict">
       </p>
       <p>
-        <a href="https://tally.so/r/mYjNRJ"><button>&#x2726; Bon Appétit &#x2726;</button></a>
+        <a href="https://tally.so/r/mYjNRJ"><button>&#x2726; Bon Appétit &#x2726;</button><br></a>
       </p>
       <p>
         <button onclick="playAgain()">&#9825; Make Another &#9825;</button>

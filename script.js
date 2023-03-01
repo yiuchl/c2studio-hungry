@@ -41,8 +41,9 @@ function dragDrop() {
     matchingCounter++;
   }
 
-  if (matchingCounter === 5) {
+  if (matchingCounter === 6) {
     endMessage.style.display = 'block';
+    funGame.style.display ='none'
   }
 
   this.classList.remove('over');
@@ -115,3 +116,4 @@ function addEventListeners() {
     item.addEventListener('dragleave', dragLeave);
   })
 }
+
