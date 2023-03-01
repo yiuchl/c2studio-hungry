@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=KoHo:wght@700&display=swap');
 
+html{
+  overflow: hidden;
+}
+
 body {
   background-color: #F5EFE0;
-  font-family: 'JetBrains Mono', monospace;
-  font-family: 'KoHo', sans-serif;
   color: #5B503B;
 }
 
 main {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .wrapper {
@@ -18,7 +20,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0;
+  margin: auto;
 }
 
 .container {
@@ -26,10 +28,40 @@ main {
   margin: auto;
 }
 
-h1,
-h3,
-p {
+h1 {
+  font-size: 3.3em;
+  font-family: 'KoHo', sans-serif;
   text-align: center;
+  margin-bottom: 0.25em;
+}
+
+h3,
+p,
+li {
+  font-family: 'JetBrains Mono', monospace;
+  text-align: center;
+  margin: 0.05em;
+  vertical-align: middle;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 1%;
+  object-fit: contain;
+}
+
+.ingredients {
+  border: 1px dashed #957B5D;
+  border-radius: 1em;
+  margin: 0.5em;
+}
+
+.ingredient-images {
+  margin: 0.25em;
+  border: 1px dashed #957B5D;
+  border-radius: 1em;
 }
 
 .ingredient-images img {
@@ -41,12 +73,19 @@ p {
   padding: 5px;
 }
 
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style-type: none;
+}
+
 li {
   list-style: none;
   padding: 10px;
   margin: 5px;
   background-color: #F0E5CF;
   border: 1px solid #957B5D;
+  border-radius: 1em;
   color: #5B503B;
   cursor: grab;
   text-align: center;

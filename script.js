@@ -65,6 +65,9 @@ function checkForMatch(selected, dropTarget) {
     case 'e5':
       return dropTarget === 's5' ? true : false;
 
+    case 'e6':
+      return dropTarget === 's6' ? true : false;
+
     default:
       return false;
   }
@@ -87,6 +90,9 @@ function checkForMatch2(selected, dropTarget) {
     case 's5':
       return dropTarget === 'e5' ? true : false;
 
+    case 's6':
+      return dropTarget === 'e6' ? true : false;
+
     default:
       return false;
   }
@@ -101,7 +107,7 @@ function playAgain() {
 }
 
 function addEventListeners() {
-  draggableListItems.forEach (item => {
+  draggableListItems.forEach(item => {
     item.addEventListener('dragstart', dragStart);
     item.addEventListener('dragenter', dragEnter);
     item.addEventListener('drop', dragDrop);
