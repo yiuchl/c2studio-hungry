@@ -45,6 +45,7 @@ function dragDrop() {
   if (matchingCounter === 6) {
     endMessage.style.display = 'block';
     funGame.style.display = 'none';
+    draggableListItems.style.display = 'none';
   }
 
   this.classList.remove('over');
@@ -103,10 +104,14 @@ function checkForMatch2(selected, dropTarget) {
 function playAgain() {
   matchingCounter == 0;
   endMessage.style.display = 'none';
-  draggableListItems.forEach(item => {
-    document.getElementById(item.id).style.display = 'block';
-  })
+  // draggableListItems.forEach(item => {
+  //   document.getElementById(item.id).style.display = 'block';
+  // })
+  draggableListItems.forEach(function addEventListener (item) {
+      document.getElementById(item.id).style.display = 'block';
+    })
   funGame.style.display = 'block';
+  // draggableListItems.style.display = 'block';
 }
 
 function addEventListeners() {
