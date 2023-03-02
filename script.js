@@ -107,9 +107,9 @@ function playAgain() {
   // draggableListItems.forEach(item => {
   //   document.getElementById(item.id).style.display = 'block';
   // })
-  draggableListItems.forEach(function addEventListener (item) {
-      document.getElementById(item.id).style.display = 'block';
-    })
+  draggableListItems.forEach(function addEventListener(item) {
+    document.getElementById(item.id).style.display = 'block';
+  })
   funGame.style.display = 'block';
   // draggableListItems.style.display = 'block';
 }
